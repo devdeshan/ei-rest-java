@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="DemoAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/DemoAPI.xml</file>
+    </artifact>
+    <artifact name="DemoAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/DemoAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="DemoAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/DemoAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="DemoPostAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/DemoPostAPI.xml</file>
+    </artifact>
+    <artifact name="DemoPostAPI_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/DemoPostAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="DemoPostAPI_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/DemoPostAPI_metadata.yaml</file>
+    </artifact>
+</artifacts>

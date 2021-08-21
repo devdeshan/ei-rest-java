@@ -1,0 +1,10 @@
+---
+key: "DemoAPI-1.0.0"
+name : "DemoAPI"
+displayName : "DemoAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/demo"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false

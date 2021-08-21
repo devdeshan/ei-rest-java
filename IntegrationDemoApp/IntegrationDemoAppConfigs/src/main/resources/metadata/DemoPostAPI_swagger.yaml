@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: DemoPostAPI
+  description: API Definition of DemoPostAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/demo/post
+paths:
+  /:
+    post:
+      responses:
+        default:
+          description: Default response

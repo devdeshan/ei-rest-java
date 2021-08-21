@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/demo" name="DemoAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log level="custom" separator="|">
+                <property expression="get-property('MessageID')" name="MessageID"/>
+            </log>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <payloadFactory media-type="json">
+                <format>{&#xd;
+"demo":"test"&#xd;
+}</format>
+                <args/>
+            </payloadFactory>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

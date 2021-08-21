@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/demo/post" name="DemoPostAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log level="custom" separator="|">
+                <property expression="get-property('MessageID')" name="MessageID"/>
+            </log>
+            <class name="com.demo.mediatorapp.ClassMediatorApp"/>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
